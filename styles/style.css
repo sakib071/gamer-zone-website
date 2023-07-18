@@ -281,32 +281,72 @@ nav li img {
 }
 
 .footer {
+    padding: 50px;
     background-color: #0B0223;
-    /* text-align: center; */
+    text-align: center;
     margin: 0 auto;
 }
 
-.footer-head {
+.footer-header {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
-.footer-head img {
-    width: 80px;
+.footer-icon img {
+    width: 100px;
 }
 
-.footer-head h3 {
-    color: #F948B2;
+.footer-title h3 {
+    color: #ffffff;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
+    margin: 0;
 }
 
-.footer-text {
+.footer-title h3 span {
+    color: #FF42A5;
+}
+
+.footer-text ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
     color: #FFF;
-    text-align: center;
     font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-text ul li,
+.footer-text-two ul li {
+    list-style: none;
+}
+
+.footer-icon {
+    padding: 40px;
+}
+
+.footer-icon i {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.footer-text-two ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-text-two p {
+    margin: 30px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
     font-weight: 500;
 }
