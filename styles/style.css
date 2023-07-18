@@ -2,9 +2,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* main{
-    width: 100%;
-} */
 .btn-primary {
     padding: 20px 40px;
     border-radius: 48px;
@@ -16,10 +13,12 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
-i{
+
+i {
     font-size: 1.2rem;
     padding: 10px;
 }
+
 header {
     background-color: #fff;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -76,7 +75,7 @@ nav a {
 
 nav li img {
     width: 20px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .follow {
@@ -138,7 +137,106 @@ nav li img {
 .banner img {
     margin-right: 240px;
 }
+
 .rogue {
     margin-left: 20px;
     background-color: #4EC5F7;
+}
+
+/* .online-game {
+    max-width: 1140px;
+    margin: 0 auto;
+} */
+
+.online-game-fun {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.section-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-desc {
+    color: #757575;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.games-container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.games-desc {
+    font-size: 1em;
+    text-align: justify;
+    color: #757575;
+}
+
+.games {
+    border-radius: 15px;
+}
+
+.games img {
+    width: 342px;
+    height: 400px;
+}
+
+.games p {
+    width: 300px;
+}
+
+.play-instantly {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 100px; */
+
+}
+
+.play-instantly-content {
+    padding: 0 300px;
+}
+
+.play-instantly-content .section-title {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.play-instantly-content p {
+    text-align: right;
+    padding: 0 0 0 10px;
+}
+
+.play-instantly-img {
+    width: 635px;
+    height: 650px;
+    margin-right: 240px;
+}
+
+.play-img {
+    background-repeat: no-repeat;
+    width: 318.5px;
+    height: 365.083px;
+    position: relative;
+    bottom: 200px;
+    right: 140px;
 }
