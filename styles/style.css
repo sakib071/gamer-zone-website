@@ -82,7 +82,7 @@ nav li img {
 }
 
 .follow {
-    padding: 0 15px;
+    padding: 10px 15px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
@@ -141,6 +141,9 @@ nav li img {
     margin-right: 240px;
 }
 
+.btn{
+    margin-top: 25px;
+}
 .rogue {
     margin-left: 20px;
     background-color: #4EC5F7;
@@ -156,7 +159,7 @@ nav li img {
     text-align: center;
     font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .section-title span {
@@ -185,6 +188,7 @@ nav li img {
     font-size: 1em;
     text-align: justify;
     color: #757575;
+    margin-top: 10px;
 }
 
 .games {
@@ -351,39 +355,6 @@ nav li img {
     font-weight: 500;
 }
 
-/* @media screen and (max-width: 576px) {
-
-    header {
-        box-shadow: none;
-    }
-
-    nav,
-    .nav-list ul {
-        flex-direction: column;
-    }
-
-    .follow {
-        padding: 0 15px;
-        border-radius: 8px;
-        background: rgba(11, 2, 35, 0.10);
-    }
-
-    li p {
-        color: red;
-    }
-
-    .banner {
-        flex-direction: column-reverse;
-    }
-
-    .banner img {
-        width: 100%;
-    }
-
-
-} */
-
-
 @media screen and (max-width: 576px) {
 
     header {
@@ -418,9 +389,12 @@ nav li img {
 
     .banner-content {
         /* padding: 40px; */
-        /* margin: 100px; */
-        width: 600px;
-        height: 600px;
+        padding: 50px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 330px;
+        height: auto;
     }
 
     .banner-content .play {
@@ -429,6 +403,19 @@ nav li img {
 
     .banner-content .goat {
         font-size: 4rem;
+    }
+
+    .para {
+        margin-bottom: 30px;
+    }
+
+    .btn-primary {
+        padding: 15px 20px;
+        font-size: 0.7rem;
+    }
+
+    .rogue {
+        margin-left: 10px;
     }
 
     .banner img {
@@ -494,26 +481,37 @@ nav li img {
     }
 
     .play-instantly-img {
-        margin: 100px;
-        width: 50%;
+        width: 330px;
+        height: auto;
+        /* margin-right: 240px; */
+        margin: 0 auto;
     }
+
+    .play-img img {
+        width: 150px;
+        height: 160px;
+        position: relative;
+        bottom: -90px;
+        right: -50px;
+    }
+
 
     .multi-game {
         padding: 100px;
+        margin: 0 auto;
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
 
     .multi-game-one {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 0;
-
-
-
+        gap: 10px;
+        margin: 0 auto;
+        justify-items: center;
     }
+
 
     .multi-game button {
         width: auto;
@@ -521,7 +519,7 @@ nav li img {
     }
 
     .multi-game button p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .footer {
