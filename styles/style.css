@@ -190,12 +190,17 @@ nav li img {
     display: inline-block;
 }
 
+.game-content img {
+    width: 300px;
+    height: 350px;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 295px;
+    height: 345px;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s;
@@ -204,7 +209,17 @@ nav li img {
     justify-content: center;
     align-items: center;
     color: white;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.overlay i {
+    font-size: 2.2rem;
+}
+
+.overlay .p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #F948B2;
 }
 
 .game-content:hover .overlay {
@@ -502,7 +517,7 @@ nav li img {
 
     .play-instantly-img img {
         width: 80%;
-        
+
     }
 
     .play-img img {
