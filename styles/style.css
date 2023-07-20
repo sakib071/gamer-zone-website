@@ -141,9 +141,10 @@ nav li img {
     margin-right: 240px;
 }
 
-.btn{
+.btn {
     margin-top: 25px;
 }
+
 .rogue {
     margin-left: 20px;
     background-color: #4EC5F7;
@@ -184,23 +185,57 @@ nav li img {
     text-align: center;
 }
 
+.game-content {
+    border-radius: 15px;
+    position: relative;
+}
+
+.game-content img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.overlay {
+    /* z-index: 10; */
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F948B2;
+    visibility: hidden;
+    border: 1x solid red;
+}
+
+.overlay i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+.game-content:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay:hover {
+    visibility: visible;
+}
+
 .games-desc {
     font-size: 1em;
     text-align: justify;
     color: #757575;
     margin-top: 10px;
-}
-
-.games {
-    border-radius: 15px;
-}
-
-.games img {
-    width: 342px;
-    height: 400px;
-}
-
-.games p {
     width: 300px;
 }
 
@@ -280,7 +315,7 @@ nav li img {
 }
 
 .multi-game button:hover {
-    border: 3px solid #F948B2;
+    border: .2rem solid #F948B2;
     color: #F948B2;
 }
 
@@ -461,29 +496,31 @@ nav li img {
     }
 
     .play-instantly {
+        display: flex;
         flex-direction: column;
         margin-bottom: 100px;
     }
 
     .play-instantly-content {
-        padding: 50px;
-        margin-bottom: 20px;
+        padding: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .play-instantly-content .section-title {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 
     .play-instantly-content p {
+        padding-right: 50px;
+        padding-left: 50px;
         text-align: center;
-        padding: 0;
     }
 
     .play-instantly-img {
-        width: 330px;
-        height: auto;
-        /* margin-right: 240px; */
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -497,30 +534,40 @@ nav li img {
 
 
     .multi-game {
-        padding: 100px;
-        margin: 0 auto;
+        padding: 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .multi-game-one {
+        padding: 0;
+        width: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin: 0 auto;
-        justify-items: center;
+        grid-template-columns: auto auto auto;
+        gap: 8px;
+        /* margin-left: 0; */
+        /* margin: 0 auto; */
     }
 
 
     .multi-game button {
         width: auto;
-        height: 100%;
+        height: auto;
+    }
+
+    .multi-game button img {
+        width: 35%;
     }
 
     .multi-game button p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
+
+    .multi-game button:hover {
+        border: .1rem solid #F948B2;
+        color: #F948B2;
+    }
+
 
     .footer {
         padding: 0 auto;
